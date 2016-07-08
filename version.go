@@ -7,14 +7,16 @@ import (
 
 // Version represents a distinct configuration version.
 type Version struct {
-	Number    string     `mapstructure:"number"`
-	Comment   string     `mapstructure:"comment"`
-	ServiceID string     `mapstructure:"service_id"`
-	Active    bool       `mapstructure:"active"`
-	Locked    bool       `mapstructure:"locked"`
-	Deployed  bool       `mapstructure:"deployed"`
-	Staging   bool       `mapstructure:"staging"`
-	Testing   bool       `mapstructure:"testing"`
+	Number    string `mapstructure:"number"`
+	Comment   string `mapstructure:"comment"`
+	ServiceID string `mapstructure:"service_id"`
+	Active    bool   `mapstructure:"active"`
+	Locked    bool   `mapstructure:"locked"`
+	Deployed  bool   `mapstructure:"deployed"`
+	Staging   bool   `mapstructure:"staging"`
+	Testing   bool   `mapstructure:"testing"`
+	Created   string `mapstructure:"created_at"`
+	Updated   string `mapstructure:"updated_at"`
 }
 
 // versionsByNumber is a sortable list of versions. This is used by the version
