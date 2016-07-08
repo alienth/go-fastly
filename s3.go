@@ -87,7 +87,7 @@ type CreateS3Input struct {
 
 	Name              string       `form:"name,omitempty"`
 	BucketName        string       `form:"bucket_name,omitempty"`
-	Domain            string       `form:"domain,omitempty"`
+	Domain            string       `form:"domain"`
 	AccessKey         string       `form:"access_key,omitempty"`
 	SecretKey         string       `form:"secret_key,omitempty"`
 	Path              string       `form:"path,omitempty"`
@@ -172,7 +172,7 @@ type UpdateS3Input struct {
 
 	NewName           string       `form:"name,omitempty"`
 	BucketName        string       `form:"bucket_name,omitempty"`
-	Domain            string       `form:"domain,omitempty"`
+	Domain            string       `form:"domain"`
 	AccessKey         string       `form:"access_key,omitempty"`
 	SecretKey         string       `form:"secret_key,omitempty"`
 	Path              string       `form:"path,omitempty"`

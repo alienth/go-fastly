@@ -94,7 +94,7 @@ type CreateBackendInput struct {
 	AutoLoadbalance     bool     `form:"auto_loadbalance,omitempty"`
 	Weight              uint     `form:"weight,omitempty"`
 	RequestCondition    string   `form:"request_condition,omitempty"`
-	HealthCheck         string   `form:"healthcheck,omitempty"`
+	HealthCheck         string   `form:"healthcheck"`
 	UseSSL              bool     `form:"use_ssl,omitempty"`
 	SSLCheckCert        bool     `form:"ssl_check_cert,omitempty"`
 	SSLHostname         string   `form:"ssl_hostname,omitempty"`
@@ -187,7 +187,7 @@ type UpdateBackendInput struct {
 	AutoLoadbalance     bool     `form:"auto_loadbalance,omitempty"`
 	Weight              uint     `form:"weight,omitempty"`
 	RequestCondition    string   `form:"request_condition,omitempty"`
-	HealthCheck         string   `form:"healthcheck,omitempty"`
+	HealthCheck         string   `form:"healthcheck"`
 	UseSSL              bool     `form:"use_ssl,omitempty"`
 	SSLCheckCert        bool     `form:"ssl_check_cert,omitempty"`
 	SSLHostname         string   `form:"ssl_hostname,omitempty"`
