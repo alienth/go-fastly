@@ -13,6 +13,8 @@ type Dictionary struct {
 	ID      string `mapstructure:"id"`
 	Name    string `mapstructure:"name"`
 	Address string `mapstructure:"address"`
+	Created string `mapstructure:"created_at"`
+	Updated string `mapstructure:"updated_at"`
 }
 
 // dictionariesByName is a sortable list of dictionaries.
