@@ -130,6 +130,7 @@ type ACLEntryUpdate struct {
 	ID        string         `json:"id,omitempty"`
 	IP        string         `json:"ip,omitempty"`
 	Subnet    string         `json:"subnet,omitempty"`
+	Comment   string         `json:"comment,omitempty"`
 }
 
 func (c *ACLEntryConfig) BatchUpdate(serviceID, aclID string, entries []ACLEntryUpdate) (*http.Response, error) {
