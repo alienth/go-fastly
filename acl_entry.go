@@ -1,7 +1,6 @@
 package fastly
 
 import (
-	"encoding/json"
 	"fmt"
 	"net/http"
 	"sort"
@@ -138,8 +137,6 @@ func (c *ACLEntryConfig) BatchUpdate(serviceID, aclID string, entries []ACLEntry
 
 	var update ACLEntryBatchUpdate
 	update.Entries = entries
-	data, _ := json.Marshal(update)
-	fmt.Println(string(data))
 	req, err := c.client.NewJSONRequest("PATCH", u, update)
 	if err != nil {
 		return nil, err
