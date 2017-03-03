@@ -23,6 +23,7 @@ type S3 struct {
 	Format            string `json:"format,omitempty"`
 	ResponseCondition string `json:"response_condition,omitempty"`
 	TimestampFormat   string `json:"timestamp_format,omitempty"`
+	Redundancy        string `json:"redundancy"`
 }
 
 // s3sByName is a sortable list of s3s.
