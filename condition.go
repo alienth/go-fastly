@@ -34,11 +34,11 @@ func (s *ConditionType) UnmarshalText(b []byte) error {
 func (s *ConditionType) MarshalText() ([]byte, error) {
 	switch *s {
 	case ConditionTypeRequest:
-		return []byte("request"), nil
+		return []byte("REQUEST"), nil
 	case ConditionTypeResponse:
-		return []byte("response"), nil
+		return []byte("RESPONSE"), nil
 	case ConditionTypeCache:
-		return []byte("cache"), nil
+		return []byte("CACHE"), nil
 	}
 	return nil, nil
 }
