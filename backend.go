@@ -14,6 +14,7 @@ type Backend struct {
 
 	Name                string `json:"name,omitempty"`
 	Port                uint   `json:"port,omitempty"`
+	OverrideHost        string `json:"override_host,omitempty"`
 	ConnectTimeout      uint   `json:"connect_timeout,omitempty"`
 	MaxConn             uint   `json:"max_conn,omitempty"`
 	ErrorThreshold      uint   `json:"error_threshold"`
