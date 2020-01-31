@@ -56,6 +56,7 @@ type Client struct {
 	Diff           *DiffConfig
 	Domain         *DomainConfig
 
+	BigQuery       *BigQueryConfig
 	Gzip           *GzipConfig
 	Header         *HeaderConfig
 	HealthCheck    *HealthCheckConfig
@@ -103,6 +104,7 @@ func NewClient(httpClient *http.Client, key string) *Client {
 	c.Diff = (*DiffConfig)(&c.common)
 	c.Domain = (*DomainConfig)(&c.common)
 
+	c.BigQuery = (*BigQueryConfig)(&c.common)
 	c.Gzip = (*GzipConfig)(&c.common)
 	c.Header = (*HeaderConfig)(&c.common)
 	c.HealthCheck = (*HealthCheckConfig)(&c.common)
