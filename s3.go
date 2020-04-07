@@ -25,7 +25,7 @@ type S3 struct {
 	ResponseCondition string      `json:"response_condition"`
 	TimestampFormat   string      `json:"timestamp_format"`
 	Redundancy        string      `json:"redundancy"`
-	MessageType       MessageType `json:"message_type"`
+	MessageType       MessageType `json:"message_type,omitempty"`
 }
 
 type MessageType int
